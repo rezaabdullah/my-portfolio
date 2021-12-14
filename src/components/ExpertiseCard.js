@@ -6,7 +6,6 @@ export const ExpertiseCard = styled.div`
     flex-direction: column;
     padding: 16px;
     margin-top: 16px;
-    // background: #264653;
     width: calc((100%-96px)/4);
     border: double #264653;
 
