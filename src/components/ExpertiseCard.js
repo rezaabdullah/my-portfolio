@@ -3,11 +3,12 @@ import styled from "styled-components"
 
 export const ExpertiseCard = styled.div`
     display: flex;
+    background: #ffffff;
     flex-direction: column;
     padding: 16px;
     margin-top: 16px;
     width: calc((100%-96px)/4);
-    border: double #264653;
+    box-shadow: 0 0 4px 4px #E7EAEC;
 
     &:hover {
         // background: black;
@@ -16,7 +17,7 @@ export const ExpertiseCard = styled.div`
     }
 
     h3 {
-        color: #264653;
+        color: #e76f51;
         background: none;
         font-size: 18px;
         font-weight: 500;
@@ -36,10 +37,10 @@ export const ExpertiseCard = styled.div`
         margin-top: 0;
         // background: #264653;
         width: 100%;
-        border: double #264653;
+        // border: double #264653;
 
         h3 {
-            color: #264653;
+            color: #e76f51;
         }
 
         p {
