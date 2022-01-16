@@ -9,6 +9,12 @@ export const ExpertiseCard = styled.div`
     width: calc((100%-96px)/4);
     border: double #264653;
 
+    &:hover {
+        // background: black;
+        transform: scale(1.05);
+        transition: ease-in-out 0.5s;
+    }
+
     h3 {
         color: #264653;
         background: none;
