@@ -2,6 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import { ExpertiseCard } from "./ExpertiseCard"
 import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Expertise = () => {
     // query data
@@ -12,6 +13,14 @@ const Expertise = () => {
                     node {
                         title
                         description
+                        alt
+                        img {
+                            childImageSharp {
+                                fluid(fit: COVER) {
+                                    src 
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -21,9 +30,13 @@ const Expertise = () => {
     // iterate over JSON data
     function getExpertise(data) {
         const expertiseArray = []
-        data.allExpertiseJson.edges.forEach((item, index) => {
+        data.allExpertiseJson.edges.forEach((item) => {
             expertiseArray.push(
                 <ExpertiseCard>
+                    <StaticImage>
+                        alt={item.node.alt}
+                        src={item.node.src}
+                    </StaticImage>
                     <h3>{item.node.title}</h3>
                     <p>{item.node.description}</p>
                 </ExpertiseCard>
