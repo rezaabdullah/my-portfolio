@@ -10,19 +10,19 @@ const Expertise = () => {
             <CardContainer>
                 <ExpertiseCard>
                     <h3>Design Thinking</h3>
-                    <p>An ardent supporter of design thinking and emphathizing users to understand the entire spectrum of the problem space</p>
+                    <p>An ardent supporter of design thinking and emphathizing users to understand the entire spectrum of the problem space.</p>
                 </ExpertiseCard>
                 <ExpertiseCard>
                     <h3>Lean Startup</h3>
-                    <p>A practitioner of the Lean Startup principles for delivering business value and reduce product development cycle by designing MVP</p>
+                    <p>A practitioner of the Lean Startup principles for delivering business value and reduce product development cycle by designing MVP.</p>
                 </ExpertiseCard>
                 <ExpertiseCard>
                     <h3>Agile Practitioner</h3>
-                    <p>An advocate to embrace scaled agile framework to develop enterprise-class cyber-physical system with human-centered design</p>
+                    <p>An advocate to embrace scaled agile framework to develop enterprise-class cyber-physical system with human-centered design.</p>
                 </ExpertiseCard>
                 <ExpertiseCard>
                     <h3>Data Science</h3>
-                    <p>Full stack data scientist (data engineering & data science) to develop augmented digital solution with machine learning and artificial intelligence</p>
+                    <p>Full stack data scientist (data engineering & data science) to develop augmented digital solution with machine learning and artificial intelligence.</p>
                 </ExpertiseCard>
             </CardContainer>
         </ExpertiseContainer>
@@ -79,3 +79,14 @@ const CardContainer = styled.div`
         gap: 16px;
         margin-top:16px
 `
+
+// query MyQuery {
+//     allExpertiseJson {
+//       edges {
+//         node {
+//           title
+//           description
+//         }
+//       }
+//     }
+//   }
