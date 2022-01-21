@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <StaticImage src="../images/abdullah_reaz_linkedin.png" alt="Portait of Abdullah Reza" />
+                <StaticImage src="../images/abdullah_reza_linkedin.png" alt="Portait of Abdullah Reza" />
             </HeroBg>
             <HeroContent>
                 <IntroSpan>Hi, my name is</IntroSpan>
