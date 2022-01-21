@@ -11,7 +11,6 @@ export const ExpertiseCard = styled.div`
     box-shadow: 0 0 4px 4px #E7EAEC;
 
     &:hover {
-        // background: black;
         transform: scale(1.05);
         transition: ease-in-out 0.5s;
     }
@@ -35,9 +34,7 @@ export const ExpertiseCard = styled.div`
     @media screen and (max-width: 768px) {
         display: flex;
         margin-top: 0;
-        // background: #264653;
         width: 100%;
-        // border: double #264653;
 
         h3 {
             color: #e76f51;
