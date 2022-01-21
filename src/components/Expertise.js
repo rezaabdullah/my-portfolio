@@ -1,29 +1,42 @@
 import * as React from "react"
 import styled from "styled-components"
 import { ExpertiseCard } from "./ExpertiseCard"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Expertise = () => {
+    // query data
+    const data = useStaticQuery(graphql`
+        query ExpertiseQuery {
+            allExpertiseJson {
+                edges {
+                    node {
+                        title
+                        description
+                    }
+                }
+            }
+        }
+    `)
+
+    // iterate over JSON data
+    function getExpertise(data) {
+        const expertiseArray = []
+        data.allExpertiseJson.edges.forEach((item, index) => {
+            expertiseArray.push(
+                <ExpertiseCard>
+                    <h3>{item.node.title}</h3>
+                    <p>{item.node.description}</p>
+                </ExpertiseCard>
+            )
+        })
+        return expertiseArray
+    }
     return (
         <ExpertiseContainer>
             <ExpertiseH1><span>|</span>Expertise</ExpertiseH1>
             <ExpertiseH2>Solution architect from lean design to agile development</ExpertiseH2>
             <CardContainer>
-                <ExpertiseCard>
-                    <h3>Design Thinking</h3>
-                    <p>An ardent supporter of design thinking and emphathizing users to understand the entire spectrum of the problem space.</p>
-                </ExpertiseCard>
-                <ExpertiseCard>
-                    <h3>Lean Startup</h3>
-                    <p>A practitioner of the Lean Startup principles for delivering business value and reduce product development cycle by designing MVP.</p>
-                </ExpertiseCard>
-                <ExpertiseCard>
-                    <h3>Agile Practitioner</h3>
-                    <p>An advocate to embrace scaled agile framework to develop enterprise-class cyber-physical system with human-centered design.</p>
-                </ExpertiseCard>
-                <ExpertiseCard>
-                    <h3>Data Science</h3>
-                    <p>Full stack data scientist (data engineering & data science) to develop augmented digital solution with machine learning and artificial intelligence.</p>
-                </ExpertiseCard>
+                {getExpertise(data)}
             </CardContainer>
         </ExpertiseContainer>
     )
