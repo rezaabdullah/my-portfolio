@@ -95,7 +95,7 @@ const HeroH1 = styled.h1`
 const HeroH2 = styled.h2`
     color: #2A9d8F;
     font-weight: 300;
-    font-size: clamp(18px, 6vw, 32px);
+    font-size: clamp(18px, 4vw, 32px);
     padding-top: 16px;
 
     @media screen and (max-width: 768px) {
