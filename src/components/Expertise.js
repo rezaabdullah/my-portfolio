@@ -61,8 +61,6 @@ const ExpertiseContainer = styled.div`
         padding: 0 16px 32px 16px;
 `
 
-// const ExpertiseCard = styled.div``
-
 const ExpertiseH1 = styled.h1`
     color: #264653;
     font-weight: 600;
@@ -93,14 +91,3 @@ const CardContainer = styled.div`
         gap: 16px;
         margin-top:16px
 `
-
-// query MyQuery {
-//     allExpertiseJson {
-//       edges {
-//         node {
-//           title
-//           description
-//         }
-//       }
-//     }
-//   }
