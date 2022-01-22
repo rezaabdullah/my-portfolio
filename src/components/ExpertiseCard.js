@@ -8,7 +8,7 @@ export const ExpertiseCard = styled.div`
     padding: 16px;
     margin-top: 16px;
     width: calc((100%-96px)/4);
-    box-shadow: 0 0 4px 4px #E7EAEC;
+    box-shadow: 0 0 2px 4px #E7EAEC;
 
     &:hover {
         transform: scale(1.05);
