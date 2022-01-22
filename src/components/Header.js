@@ -32,7 +32,7 @@ const Nav = styled.div`
     padding: 0px calc((100vw - 1180px) / 2);
     z-index: 200;
     position: relative;
-    border-bottom: solid 1px #457B9D;
+    border-bottom: solid 1px #1d3557;
 `
 
 const NavMenu = styled.div`
@@ -51,20 +51,21 @@ const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     padding: 0 16px;
-    color: #264653;
+    color: #1d3557;
+    font-weight: 400;
 
     h1 {
-        color: #e76f51;
+        color: #e63946;
         font-weight: 400;
 
         & :hover {
-            color: #264653;
+            color: #1d3557;
             transition: ease-in-out 0.3s;
         }
     }
 
     & :hover {
-        color: #e76f51;
+        color: #e63946;
         transition: ease-in-out 0.3s;
     }
 `
