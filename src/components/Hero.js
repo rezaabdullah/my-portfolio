@@ -41,7 +41,6 @@ const HeroContainer = styled.div`
     padding: 0 calc((100vw - 1180px) / 2);
     margin-top: -64px;
     position: relative;
-    // border-bottom: solid 1px #457B9D;
 
     @media screen and (max-width: 768px) {
         display: flex;

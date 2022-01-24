@@ -2,7 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import { ExpertiseCard } from "./ExpertiseCard"
 import { useStaticQuery, graphql } from "gatsby"
-// import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Expertise = () => {
     // query data
