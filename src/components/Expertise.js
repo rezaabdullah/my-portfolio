@@ -62,18 +62,18 @@ const ExpertiseContainer = styled.div`
 `
 
 const ExpertiseH1 = styled.h1`
-    color: #264653;
+    color: #1d3557;
     font-weight: 600;
     font-size: clamp(24px, 6vw, 36px);
 
     span {
-        color: #E76F51;
+        color: #e63946;
         font-weight: bold;
     }
 `
 
 const ExpertiseH2 = styled.h2`
-    color: #2A9d8F;
+    color: #457b9d;
     font-weight: 300;
     font-size: clamp(18px, 6vw, 24px);
     padding-top: 8px;
