@@ -52,7 +52,6 @@ const ExpertiseContainer = styled.div`
     margin-top: 16px;
     padding-bottom: 32px;
     position: relative;
-    border-bottom: solid 1px #457B9D;
 
     @media screen and (max-width: 768px) {
         display: flex;
@@ -76,13 +75,14 @@ const ExpertiseH2 = styled.h2`
     color: #457b9d;
     font-weight: 300;
     font-size: clamp(18px, 6vw, 24px);
-    padding-top: 8px;
+    padding-top: 16px;
 `
 
 const CardContainer = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    padding-top: 16px;
 
     @media screen and (max-width: 768px) {
         display: flex;

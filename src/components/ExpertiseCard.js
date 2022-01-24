@@ -12,11 +12,12 @@ export const ExpertiseCard = styled.div`
 
     &:hover {
         transform: scale(1.05);
+        // filter: brightness(0.97);
         transition: ease-in-out 0.5s;
     }
 
     h3 {
-        color: #e76f51;
+        color: #1d3557;
         background: none;
         font-size: 18px;
         font-weight: 500;
@@ -24,7 +25,7 @@ export const ExpertiseCard = styled.div`
 
     p {
         background: none;
-        color: #264653;
+        color: #1d3557;
         font-size: 16px;
         font-weight: 300;
         line-height: 24px;
