@@ -83,7 +83,7 @@ const HeroContent = styled.div`
 `
 
 const HeroH1 = styled.h1`
-    color: #264653;
+    color: #1d3557;
     font-weight: 600;
     font-size: clamp(24px, 6vw, 64px);
     padding-top: 16px;
@@ -93,7 +93,7 @@ const HeroH1 = styled.h1`
 `
 
 const HeroH2 = styled.h2`
-    color: #2A9d8F;
+    color: #457b9d;
     font-weight: 300;
     font-size: clamp(18px, 4vw, 32px);
     padding-top: 16px;
@@ -103,7 +103,7 @@ const HeroH2 = styled.h2`
 `
 
 const IntroSpan = styled.span`
-    color: #E76F51;
+    color: #e63946;
     font-size: 18px;
 
     @media screen and (max-width: 768px) {
@@ -112,7 +112,7 @@ const IntroSpan = styled.span`
 
 const IntroP = styled.p`
     padding-top: 16px;
-    color: #264653;
+    color: #1d3557;
     font-size: 18px;
     line-height: 32px;
 
@@ -123,7 +123,11 @@ const IntroP = styled.p`
 
 const HeroLink = styled(Link)`
     text-decoration: none;
-    color: #E76F51;
+    color: #0073bb;
+
+    & :hover {
+        color: #002060;
+    }
 `
 
 const HeroProfile = styled.div`
@@ -132,7 +136,7 @@ const HeroProfile = styled.div`
 `
 
 const LinkedInIcon = styled(GrLinkedin)`
-    color: #264653;
+    color: #1d3557;
     background: none;
     font-size: 32px;
     margin-right: 16px;
@@ -145,7 +149,7 @@ const LinkedInIcon = styled(GrLinkedin)`
 `
 
 const GithubIcon = styled(GrGithub)`
-    color: #264653;
+    color: #1d3557;
     font-size: 32px;
     background: none;
     margin-right: 16px;
@@ -161,7 +165,7 @@ const GithubIcon = styled(GrGithub)`
 `
 
 const MediumIcon = styled(GrMedium)`
-    color: #264653;
+    color: #1d3557;
     font-size: 32px;
     background: none;
     margin-right: 24px;
@@ -177,7 +181,7 @@ const MediumIcon = styled(GrMedium)`
 `
 
 const MailIcon = styled(GrMail)`
-    color: #264653;
+    color: #1d3557;
     font-size: 32px;
     background: none;
 
@@ -190,25 +194,3 @@ const MailIcon = styled(GrMail)`
     @media screen and (max-width: 768px) {
         margin-right: 16px;
 `
-
-// const ContactCTA = styled.div`
-//     background: #264653;
-//     height: 32px;
-//     padding: 0 16px;
-//     font-size: 16px;
-//     display: flex;
-//     align-items: center;
-//     color: #FFFFFF;
-//     cursor: pointer;
-//     margin-right: 64px;
-    
-//     & :hover {
-//         filter: brightness(1.25);
-//         transform: scale(1.10);
-//         transition: ease-in-out 0.3s;
-//     }
-
-//     @media screen and (max-width: 768px) {
-//         font-size: 12px;
-//         margin-right: 16px;
-// `
