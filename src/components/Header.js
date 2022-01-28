@@ -50,7 +50,7 @@ const NavLogo = styled(Link)`
     cursor: pointer;
     color: #e63946;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 32px;
 
     & :hover {
         color: #1d3557;

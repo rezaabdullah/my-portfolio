@@ -59,7 +59,6 @@ export default Expertise
 const ExpertiseContainer = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 0 calc((100vw - 1180px) / 2);
     margin-top: 16px;
     padding-bottom: 32px;
     position: relative;

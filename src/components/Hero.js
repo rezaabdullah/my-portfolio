@@ -7,9 +7,9 @@ import { GrLinkedin, GrGithub, GrMedium, GrMail} from "react-icons/gr"
 const Hero = () => {
     return (
         <HeroContainer>
-            <HeroBg>
+            <HeroImage>
                 <StaticImage src="../images/abdullah_reza_linkedin.png" alt="Portait of Abdullah Reza" />
-            </HeroBg>
+            </HeroImage>
             <HeroContent>
                 <IntroSpan>Hi, my name is</IntroSpan>
                 <HeroH1>Abdullah Reza.</HeroH1>
@@ -38,9 +38,9 @@ export default Hero
 
 const HeroContainer = styled.div`
     display: flex;
-    padding: 0 calc((100vw - 1180px) / 2);
     margin-top: -64px;
     position: relative;
+    // height: 100vh;
 
     @media screen and (max-width: 768px) {
         display: flex;
@@ -49,7 +49,7 @@ const HeroContainer = styled.div`
         padding: 80px 16px 32px 16px;
 `
 
-const HeroBg = styled.div`
+const HeroImage = styled.div`
     display: flex;
     width: 33%;
     justify-content: center;
