@@ -7,9 +7,9 @@ import { menuData } from "../data/MenuData"
 const Header = () => {
     return(
         <Nav>
-            <NavLink to="/">
-                <h1>A|R</h1>
-            </NavLink>
+            <NavLogo to="/">
+                A|R
+            </NavLogo>
             <Bars />
             <NavMenu>
                 {menuData.map((item, index) => (
@@ -29,7 +29,6 @@ const Nav = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px calc((100vw - 1180px) / 2);
     z-index: 200;
     position: relative;
     border-bottom: solid 1px #1d3557;
@@ -38,10 +37,28 @@ const Nav = styled.div`
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    // margin-right: 32px;
 
     @media screen and (max-width: 768px) {
         display: none;
+`
+
+const NavLogo = styled(Link)`
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
+    color: #e63946;
+    font-weight: 400;
+    font-size: 48px;
+
+    & :hover {
+        color: #1d3557;
+        transition: ease-in-out 0.3s;
+    }
+
+    @media screen and (max-width: 1180px) {
+        padding: 0px 16px;
 `
 
 const NavLink = styled(Link)`
@@ -50,24 +67,17 @@ const NavLink = styled(Link)`
     text-decoration: none;
     height: 100%;
     cursor: pointer;
-    padding: 0 16px;
+    padding-left: 32px;
     color: #1d3557;
     font-weight: 400;
-
-    h1 {
-        color: #e63946;
-        font-weight: 400;
-
-        & :hover {
-            color: #1d3557;
-            transition: ease-in-out 0.3s;
-        }
-    }
 
     & :hover {
         color: #e63946;
         transition: ease-in-out 0.3s;
     }
+
+    @media screen and (max-width: 1180px) {
+        padding: 0px 16px;
 `
 
 const Bars = styled(FaBars)`
