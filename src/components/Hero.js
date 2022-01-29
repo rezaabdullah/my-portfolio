@@ -81,9 +81,6 @@ const HeroContent = styled.div`
 `
 
 const HeroH1 = styled.h1`
-    color: #1d3557;
-    font-weight: 600;
-    font-size: clamp(24px, 6vw, 64px);
     padding-top: 16px;
 
     @media screen and (max-width: 768px) {
@@ -93,7 +90,6 @@ const HeroH1 = styled.h1`
 const HeroH2 = styled.h2`
     color: #457b9d;
     font-weight: 300;
-    font-size: clamp(18px, 4vw, 32px);
     padding-top: 16px;
 
     @media screen and (max-width: 768px) {
@@ -102,7 +98,8 @@ const HeroH2 = styled.h2`
 
 const IntroSpan = styled.span`
     color: #e63946;
-    font-size: 18px;
+    font-size: clamp(18px, 4vw, 24px);
+    
 
     @media screen and (max-width: 768px) {
         font-size: 12px;
@@ -111,8 +108,6 @@ const IntroSpan = styled.span`
 const IntroP = styled.p`
     padding-top: 16px;
     color: #1d3557;
-    font-size: 18px;
-    line-height: 32px;
 
     @media screen and (max-width: 768px) {
         font-size: 16px;

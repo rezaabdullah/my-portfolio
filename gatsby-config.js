@@ -47,6 +47,7 @@ module.exports = {
       options: {
         fonts: [
           "ibm plex sans",
+          "ibm plex mono"
         ],
         display: 'swap'
       }
