@@ -40,7 +40,6 @@ const HeroContainer = styled.div`
     display: flex;
     margin-top: -64px;
     position: relative;
-    // height: 100vh;
 
     @media screen and (max-width: 768px) {
         display: flex;
