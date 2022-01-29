@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         h2 {
             font-size: clamp(24px, 6vw, 42px);
             font-weight: 500;
-            line-height: 50px;
+            line-height: clamp(32px, 6vw, 50px);
             color: #1d3557;
         }
 
@@ -28,9 +28,10 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         h4 {
-            font-size: clamp(18px, 6vw, 32px);
+            font-size: clamp(18px, 6vw, 24px);
             font-weight: 300;
             color: #457b9d;
+            background: none;
         }
 
         h5 {

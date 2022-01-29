@@ -19,7 +19,8 @@ export const ExpertiseCard = styled.div`
         padding-top: 32px;
         color: #1d3557;
         background: none;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 26px;
         font-weight: 500;
     }
 
